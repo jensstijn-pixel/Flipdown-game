@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" style="--m:#F7C948; --a:#E8871E">
+
+<defs>
+<g id="robot-base">
+  <rect x="86" y="100" width="28" height="18" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <circle cx="50" cy="77" r="9" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="150" cy="77" r="9" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6"></circle>
+  <rect x="52" y="114" width="96" height="78" rx="14" fill="var(--m,#F7C948)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="56" y="48" width="88" height="58" rx="16" fill="var(--m,#F7C948)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="74" y="134" width="52" height="38" rx="9" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+</g>
+<g id="top-none"></g>
+<g id="top-antenna">
+  <path d="M100 50 L100 24" fill="none" stroke="#273140" stroke-width="7" stroke-linecap="round"></path>
+  <circle cx="100" cy="16" r="9" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6"></circle>
+</g>
+<g id="top-antennae">
+  <path d="M80 50 C78 36 64 34 60 24" fill="none" stroke="#273140" stroke-width="7" stroke-linecap="round"></path>
+  <path d="M120 50 C122 36 136 34 140 24" fill="none" stroke="#273140" stroke-width="7" stroke-linecap="round"></path>
+  <circle cx="58" cy="16" r="8" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="142" cy="16" r="8" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6"></circle>
+</g>
+<g id="top-propeller">
+  <path d="M100 50 L100 36" fill="none" stroke="#273140" stroke-width="7" stroke-linecap="round"></path>
+  <rect x="50" y="23" width="44" height="14" rx="7" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="106" y="23" width="44" height="14" rx="7" fill="var(--m,#F7C948)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <circle cx="100" cy="30" r="8" fill="#CFD8E0" stroke="#273140" stroke-width="6"></circle>
+</g>
+<g id="eyes-single">
+  <circle cx="100" cy="77" r="21" fill="#FFFFFF" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="100" cy="77" r="9" fill="#273140"></circle>
+</g>
+<g id="eyes-two">
+  <circle cx="81" cy="77" r="13" fill="#FFFFFF" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="119" cy="77" r="13" fill="#FFFFFF" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="81" cy="77" r="6" fill="#273140"></circle>
+  <circle cx="119" cy="77" r="6" fill="#273140"></circle>
+</g>
+<g id="eyes-visor">
+  <rect x="64" y="65" width="72" height="24" rx="12" fill="#273140" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <circle cx="84" cy="77" r="6" fill="#9FE8FF"></circle>
+  <circle cx="116" cy="77" r="6" fill="#9FE8FF"></circle>
+</g>
+<g id="arms-grabber">
+  <path d="M56 132 L36 158" fill="none" stroke="#273140" stroke-width="10" stroke-linecap="round"></path>
+  <path d="M144 132 L164 158" fill="none" stroke="#273140" stroke-width="10" stroke-linecap="round"></path>
+  <path d="M17 172 A13 13 0 1 1 29 184" fill="none" stroke="#273140" stroke-width="9" stroke-linecap="round"></path>
+  <path d="M183 172 A13 13 0 1 0 171 184" fill="none" stroke="#273140" stroke-width="9" stroke-linecap="round"></path>
+</g>
+<g id="arms-claw">
+  <path d="M56 132 L40 166" fill="none" stroke="#273140" stroke-width="10" stroke-linecap="round"></path>
+  <path d="M144 132 L160 166" fill="none" stroke="#273140" stroke-width="10" stroke-linecap="round"></path>
+  <polygon points="42,162 14,148 30,172" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></polygon>
+  <polygon points="42,180 14,194 30,170" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></polygon>
+  <polygon points="158,162 186,148 170,172" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></polygon>
+  <polygon points="158,180 186,194 170,170" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></polygon>
+  <circle cx="40" cy="168" r="7" fill="#273140"></circle>
+  <circle cx="160" cy="168" r="7" fill="#273140"></circle>
+</g>
+<g id="base-wheels">
+  <rect x="62" y="186" width="76" height="14" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <circle cx="70" cy="211" r="20" fill="#3A4450" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="130" cy="211" r="20" fill="#3A4450" stroke="#273140" stroke-width="6"></circle>
+  <circle cx="70" cy="211" r="8" fill="#CFD8E0"></circle>
+  <circle cx="130" cy="211" r="8" fill="#CFD8E0"></circle>
+</g>
+<g id="base-legs">
+  <rect x="68" y="186" width="20" height="28" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="112" y="186" width="20" height="28" fill="var(--a,#E8871E)" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="56" y="210" width="42" height="18" rx="9" fill="#3A4450" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <rect x="102" y="210" width="42" height="18" rx="9" fill="#3A4450" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+</g>
+<g id="base-tracks">
+  <rect x="46" y="194" width="108" height="38" rx="19" fill="#3A4450" stroke="#273140" stroke-width="6" stroke-linejoin="round"></rect>
+  <circle cx="72" cy="213" r="9" fill="#CFD8E0"></circle>
+  <circle cx="100" cy="213" r="9" fill="#CFD8E0"></circle>
+  <circle cx="128" cy="213" r="9" fill="#CFD8E0"></circle>
+</g>
+</defs>
+
+<use href="#top-antenna"></use>
+<use href="#arms-grabber"></use>
+<use href="#base-wheels"></use>
+<use href="#robot-base"></use>
+<use href="#eyes-two"></use>
+</svg>

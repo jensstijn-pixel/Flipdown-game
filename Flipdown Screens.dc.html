@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#EFECE6;font-family:system-ui,sans-serif}
+a{color:#221E19}a:hover{color:#5E6AD2}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;margin-bottom:34px}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-grp{font:700 11px/1 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(0,0,0,.45);margin:0 0 12px}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+</style>
+</helmet>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Flipdown — three screens, all states · 390×844 · Nunito heavy · ink on warm paper, characters supply the colour</span></div>
+
+<p class="dv-grp">Core flow — setup → secret card → board</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Setup — giant readout so both phones can be matched across the table</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Setup" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;padding:20px;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19">
+  <div style="text-align:center;font-weight:900;font-size:15px;letter-spacing:4px;padding-top:6px">FLIPDOWN</div>
+  <div style="margin-top:16px;background:#fff;border:3px solid #221E19;border-radius:26px;padding:16px 16px 4px;text-align:center;box-shadow:0 8px 0 rgba(34,30,25,.07)">
+    <div style="font-weight:800;font-size:11px;letter-spacing:2px;color:#9A938A">BOTH PHONES PICK</div>
+    <div style="font-weight:900;font-size:33px;letter-spacing:2px;margin-top:2px">ROBOTS</div>
+    <div style="font-weight:900;font-size:122px;line-height:.95">3</div>
+  </div>
+  <div style="margin-top:18px;font-weight:800;font-size:11px;letter-spacing:2px;color:#9A938A">CATEGORY</div>
+  <div style="margin-top:10px;display:flex;gap:10px">
+    <div style="flex:1;height:92px;border-radius:20px;background:#fff;border:3px solid #221E19;box-shadow:0 6px 0 rgba(34,30,25,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px">
+      <div style="width:30px;height:26px;border-radius:7px;background:#3E8DE3;display:flex;align-items:center;justify-content:center;gap:5px"><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:.5px">ROBOTS</div>
+    </div>
+    <div style="flex:1;height:92px;border-radius:20px;border:2px solid #E8E3DA;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px">
+      <div style="width:28px;height:28px;border-radius:50%;background:#F5A623;display:flex;align-items:center;justify-content:center;gap:5px"><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:.5px;color:#9A938A">FACES</div>
+    </div>
+    <div style="flex:1;height:92px;border-radius:20px;border:2px solid #E8E3DA;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px">
+      <div style="width:30px;height:26px;border-radius:15px 15px 5px 5px;background:#3FA66A;display:flex;align-items:center;justify-content:center;gap:5px"><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div><div style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.95)"></div></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:.5px;color:#9A938A">MONSTERS</div>
+    </div>
+  </div>
+  <div style="margin-top:18px;font-weight:800;font-size:11px;letter-spacing:2px;color:#9A938A">BOARD</div>
+  <div style="margin-top:10px;display:flex;justify-content:space-between">
+    <div style="width:56px;height:56px;border-radius:28px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:21px">1</div>
+    <div style="width:56px;height:56px;border-radius:28px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:21px">2</div>
+    <div style="width:56px;height:56px;border-radius:28px;background:#221E19;color:#FAF8F3;border:3px solid #221E19;display:grid;place-items:center;font-weight:900;font-size:23px;box-shadow:0 5px 0 rgba(34,30,25,.15)">3</div>
+    <div style="width:56px;height:56px;border-radius:28px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:21px">4</div>
+    <div style="width:56px;height:56px;border-radius:28px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:21px">5</div>
+  </div>
+  <div style="flex:1"></div>
+  <div style="height:64px;border-radius:32px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;gap:12px;font-weight:900;font-size:19px;letter-spacing:2px">START ROUND <span style="font-size:22px">&#8594;</span></div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Your secret card — dark = private, never looks like the shared board</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Secret card" style="width:390px;height:844px;background:#221E19;display:flex;flex-direction:column;align-items:center;padding:24px;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif">
+  <div style="flex:.9"></div>
+  <div style="font-weight:800;font-size:12px;letter-spacing:3px;color:rgba(250,248,243,.6)">YOUR SECRET CHARACTER</div>
+  <div style="margin-top:22px;width:300px;height:380px;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px">
+    <div style="{{ secretFig }}"><div style="{{ secretEyes }}"><div style="{{ secretEye }}"></div><div style="{{ secretEye }}"></div></div></div>
+    <div style="font-weight:900;font-size:32px;letter-spacing:2px;color:#221E19">NOVA</div>
+  </div>
+  <div style="margin-top:20px;font-weight:700;font-size:14px;color:rgba(250,248,243,.55)">Don't let them see it</div>
+  <div style="flex:1"></div>
+  <div style="width:100%;height:64px;border-radius:32px;background:#FAF8F3;color:#221E19;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;letter-spacing:2px">GOT IT</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Board, mid-round — 2 flipped, undo toast after every flip</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Board" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19;position:relative;overflow:hidden">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="font-weight:800;font-size:11px;letter-spacing:1px;color:#9A938A">10 LEFT</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;gap:8px;flex:none">
+      <div style="width:12px;height:16px;border:2.5px solid #FAF8F3;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ midCards }}" as="c" hint-placeholder-count="12">
+      <div style="{{ c.card }}">
+        <sc-if value="{{ c.showFig }}" hint-placeholder-val="{{ true }}"><div style="{{ c.fig }}"><div style="{{ c.eyes }}"><div style="{{ c.eye }}"></div><div style="{{ c.eye }}"></div></div></div></sc-if>
+        <sc-if value="{{ c.back }}" hint-placeholder-val="{{ false }}"><div style="{{ c.backStyle }}"></div></sc-if>
+        <sc-if value="{{ c.showName }}" hint-placeholder-val="{{ true }}"><div style="{{ c.nameStyle }}">{{ c.name }}</div></sc-if>
+        <sc-if value="{{ c.cross }}" hint-placeholder-val="{{ false }}"><div style="{{ c.bar1 }}"></div><div style="{{ c.bar2 }}"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:10px 16px 22px">
+    <div style="height:60px;border-radius:30px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;letter-spacing:2px">MAKE A GUESS</div>
+  </div>
+  <div style="position:absolute;left:50%;transform:translateX(-50%);bottom:100px;background:#221E19;color:#FAF8F3;border-radius:18px;padding:13px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 24px rgba(34,30,25,.35);white-space:nowrap">
+    <span style="font-weight:800;font-size:13px;letter-spacing:.5px">GUS FLIPPED</span>
+    <span style="width:2px;height:16px;background:rgba(250,248,243,.25);border-radius:1px"></span>
+    <span style="font-weight:900;font-size:13px;letter-spacing:1.5px;color:#F7CE46">UNDO</span>
+  </div>
+</div>
+</div></div>
+</div>
+
+<p class="dv-grp">Board states</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1d"><div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Loading a board</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Board loading" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="font-weight:800;font-size:11px;letter-spacing:1px;color:#9A938A">LOADING</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;gap:8px;flex:none;opacity:.3">
+      <div style="width:12px;height:16px;border:2.5px solid #FAF8F3;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ skels }}" as="s" hint-placeholder-count="12">
+      <div style="height:152px;border-radius:18px;background:#F0EDE6;display:grid;place-items:center"><div style="width:44px;height:44px;border-radius:50%;background:#E3DDD1"></div></div></sc-for>
+  </div>
+  <div style="padding:10px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:10px">
+    <div style="display:flex;gap:7px"><div style="width:10px;height:10px;border-radius:50%;background:#221E19"></div><div style="width:10px;height:10px;border-radius:50%;background:#C6BFB3"></div><div style="width:10px;height:10px;border-radius:50%;background:#E3DDD1"></div></div>
+    <div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#9A938A">LOADING BOARD</div>
+  </div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1e"><div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Board failed to load — retry, or back to setup</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Board load error" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19;padding:0 20px 24px">
+  <div style="display:flex;align-items:center;padding:12px 0 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px">&#10005;</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center">
+    <div style="width:118px;height:118px;border-radius:50%;background:#E8E3DA;display:grid;place-items:center;font-weight:900;font-size:56px;color:#9A938A">!</div>
+    <div style="font-weight:900;font-size:24px;letter-spacing:1px;margin-top:8px">BOARD DIDN'T LOAD</div>
+    <div style="font-weight:700;font-size:14px;color:#9A938A;max-width:240px">Check your signal, then try again</div>
+  </div>
+  <div style="height:64px;border-radius:32px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;letter-spacing:2px">TRY AGAIN</div>
+  <div style="height:56px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;letter-spacing:1px;color:#9A938A;margin-top:6px">BACK TO SETUP</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1f"><div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>Late game — survivors pop, crosses fade back</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Board late game" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="display:inline-flex;padding:3px 10px;border-radius:10px;background:#F7CE46;font-weight:900;font-size:11px;letter-spacing:1px">3 LEFT</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;gap:8px;flex:none">
+      <div style="width:12px;height:16px;border:2.5px solid #FAF8F3;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ lateCards }}" as="c" hint-placeholder-count="12">
+      <div style="{{ c.card }}">
+        <sc-if value="{{ c.showFig }}" hint-placeholder-val="{{ true }}"><div style="{{ c.fig }}"><div style="{{ c.eyes }}"><div style="{{ c.eye }}"></div><div style="{{ c.eye }}"></div></div></div></sc-if>
+        <sc-if value="{{ c.back }}" hint-placeholder-val="{{ false }}"><div style="{{ c.backStyle }}"></div></sc-if>
+        <sc-if value="{{ c.showName }}" hint-placeholder-val="{{ true }}"><div style="{{ c.nameStyle }}">{{ c.name }}</div></sc-if>
+        <sc-if value="{{ c.cross }}" hint-placeholder-val="{{ false }}"><div style="{{ c.bar1 }}"></div><div style="{{ c.bar2 }}"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:10px 16px 22px">
+    <div style="height:60px;border-radius:30px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;letter-spacing:2px">MAKE A GUESS</div>
+  </div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1g"><div class="dv-olabel"><a class="dv-oid" href="#1g">1g</a>Peek, while held — card shows only while pressing, gone on release</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Peek held" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19;position:relative;overflow:hidden">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px;position:relative;z-index:4">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="font-weight:800;font-size:11px;letter-spacing:1px;color:#9A938A">10 LEFT</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#F7CE46;color:#221E19;display:flex;align-items:center;gap:8px;flex:none;transform:scale(.96)">
+      <div style="width:12px;height:16px;border:2.5px solid #221E19;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ midCards }}" as="c" hint-placeholder-count="12">
+      <div style="{{ c.card }}">
+        <sc-if value="{{ c.showFig }}" hint-placeholder-val="{{ true }}"><div style="{{ c.fig }}"><div style="{{ c.eyes }}"><div style="{{ c.eye }}"></div><div style="{{ c.eye }}"></div></div></div></sc-if>
+        <sc-if value="{{ c.showName }}" hint-placeholder-val="{{ true }}"><div style="{{ c.nameStyle }}">{{ c.name }}</div></sc-if>
+        <sc-if value="{{ c.cross }}" hint-placeholder-val="{{ false }}"><div style="{{ c.bar1 }}"></div><div style="{{ c.bar2 }}"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:10px 16px 22px">
+    <div style="height:60px;border-radius:30px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;letter-spacing:2px">MAKE A GUESS</div>
+  </div>
+  <div style="position:absolute;left:0;right:0;top:68px;bottom:0;background:rgba(26,23,19,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;z-index:3">
+    <div style="font-weight:800;font-size:12px;letter-spacing:3px;color:rgba(250,248,243,.6)">YOUR CARD</div>
+    <div style="width:230px;height:288px;background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px">
+      <div style="{{ peekFig }}"><div style="{{ peekEyes }}"><div style="{{ peekEye }}"></div><div style="{{ peekEye }}"></div></div></div>
+      <div style="font-weight:900;font-size:24px;letter-spacing:2px;color:#221E19">NOVA</div>
+    </div>
+    <div style="font-weight:800;font-size:12px;letter-spacing:2px;color:rgba(250,248,243,.6)">RELEASE TO HIDE</div>
+  </div>
+</div>
+</div></div>
+</div>
+
+<p class="dv-grp">Leaving &amp; the final guess</p>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1h"><div class="dv-olabel"><a class="dv-oid" href="#1h">1h</a>Back tapped — confirm before abandoning the round</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Leave confirm" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19;position:relative;overflow:hidden">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="font-weight:800;font-size:11px;letter-spacing:1px;color:#9A938A">10 LEFT</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;gap:8px;flex:none">
+      <div style="width:12px;height:16px;border:2.5px solid #FAF8F3;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ midCards }}" as="c" hint-placeholder-count="12">
+      <div style="{{ c.card }}">
+        <sc-if value="{{ c.showFig }}" hint-placeholder-val="{{ true }}"><div style="{{ c.fig }}"><div style="{{ c.eyes }}"><div style="{{ c.eye }}"></div><div style="{{ c.eye }}"></div></div></div></sc-if>
+        <sc-if value="{{ c.showName }}" hint-placeholder-val="{{ true }}"><div style="{{ c.nameStyle }}">{{ c.name }}</div></sc-if>
+        <sc-if value="{{ c.cross }}" hint-placeholder-val="{{ false }}"><div style="{{ c.bar1 }}"></div><div style="{{ c.bar2 }}"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="padding:10px 16px 22px">
+    <div style="height:60px;border-radius:30px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;letter-spacing:2px">MAKE A GUESS</div>
+  </div>
+  <div style="position:absolute;inset:0;background:rgba(26,23,19,.55);display:grid;place-items:center;z-index:5">
+    <div style="width:320px;background:#fff;border-radius:26px;padding:26px 22px 22px;box-sizing:border-box;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4)">
+      <div style="font-weight:900;font-size:22px;letter-spacing:1px">LEAVE THE ROUND?</div>
+      <div style="font-weight:700;font-size:14px;color:#9A938A;margin-top:8px">The board is lost for both players</div>
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <div style="flex:1;height:56px;border-radius:28px;background:#221E19;color:#FAF8F3;display:grid;place-items:center;font-weight:900;font-size:16px;letter-spacing:1px">STAY</div>
+        <div style="flex:1;height:56px;border-radius:28px;border:3px solid #D9483B;color:#D9483B;box-sizing:border-box;display:grid;place-items:center;font-weight:900;font-size:16px;letter-spacing:1px">LEAVE</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1i"><div class="dv-olabel"><a class="dv-oid" href="#1i">1i</a>Final guess — picked card pops above the dim, sheet confirms</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Final guess confirm" style="width:390px;height:844px;background:#FAF8F3;display:flex;flex-direction:column;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif;color:#221E19;position:relative;overflow:hidden">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 6px">
+    <div style="width:44px;height:44px;border-radius:22px;background:#fff;border:2px solid #E8E3DA;display:grid;place-items:center;font-weight:900;font-size:16px;flex:none">&#10005;</div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+      <div style="font-weight:900;font-size:14px;letter-spacing:1.5px">ROBOTS &#183; 3</div>
+      <div style="font-weight:800;font-size:11px;letter-spacing:1px;color:#9A938A">PICK THEIR CARD</div>
+    </div>
+    <div style="height:44px;padding:0 14px;border-radius:22px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;gap:8px;flex:none">
+      <div style="width:12px;height:16px;border:2.5px solid #FAF8F3;border-radius:4px"></div>
+      <div style="font-weight:900;font-size:13px;letter-spacing:1px">PEEK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:8px 12px;flex:1;align-content:start">
+    <sc-for list="{{ guessCards }}" as="c" hint-placeholder-count="12">
+      <div style="{{ c.card }}">
+        <sc-if value="{{ c.showFig }}" hint-placeholder-val="{{ true }}"><div style="{{ c.fig }}"><div style="{{ c.eyes }}"><div style="{{ c.eye }}"></div><div style="{{ c.eye }}"></div></div></div></sc-if>
+        <sc-if value="{{ c.showName }}" hint-placeholder-val="{{ true }}"><div style="{{ c.nameStyle }}">{{ c.name }}</div></sc-if>
+        <sc-if value="{{ c.cross }}" hint-placeholder-val="{{ false }}"><div style="{{ c.bar1 }}"></div><div style="{{ c.bar2 }}"></div></sc-if>
+        <sc-if value="{{ c.pick }}" hint-placeholder-val="{{ false }}"><div style="{{ c.pickBadge }}">?</div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="position:absolute;left:0;right:0;top:68px;bottom:0;background:rgba(26,23,19,.35);z-index:2"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:26px 26px 0 0;padding:22px 20px 26px;box-shadow:0 -12px 34px rgba(34,30,25,.22);z-index:6;display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="{{ sheetFig }}"><div style="{{ sheetEyes }}"><div style="{{ sheetEye }}"></div><div style="{{ sheetEye }}"></div></div></div>
+      <div>
+        <div style="font-weight:800;font-size:11px;letter-spacing:2px;color:#9A938A">FINAL GUESS</div>
+        <div style="font-weight:900;font-size:30px;letter-spacing:1px">NOVA?</div>
+      </div>
+    </div>
+    <div style="font-weight:700;font-size:13px;color:#9A938A">A wrong guess loses the round</div>
+    <div style="height:60px;border-radius:30px;background:#221E19;color:#FAF8F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;letter-spacing:2px">IT'S NOVA</div>
+    <div style="height:44px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;letter-spacing:1px;color:#9A938A">KEEP PLAYING</div>
+  </div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1j"><div class="dv-olabel"><a class="dv-oid" href="#1j">1j</a>Guess was right</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Result correct" style="width:390px;height:844px;background:#2F9E63;display:flex;flex-direction:column;align-items:center;padding:24px;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif">
+  <div style="flex:.9"></div>
+  <div style="width:84px;height:84px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:42px;color:#2F9E63">&#10003;</div>
+  <div style="margin-top:18px;font-weight:900;font-size:36px;letter-spacing:2px;color:#fff">YOU GOT IT!</div>
+  <div style="margin-top:26px;width:230px;height:280px;background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px">
+    <div style="{{ resFig }}"><div style="{{ resEyes }}"><div style="{{ resEye }}"></div><div style="{{ resEye }}"></div></div></div>
+    <div style="font-weight:900;font-size:24px;letter-spacing:2px;color:#221E19">NOVA</div>
+  </div>
+  <div style="flex:1"></div>
+  <div style="width:100%;height:64px;border-radius:32px;background:#fff;color:#221E19;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;letter-spacing:2px">PLAY AGAIN</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1k"><div class="dv-olabel"><a class="dv-oid" href="#1k">1k</a>Guess was wrong — round goes to the opponent</div>
+<div class="dv-card" style="width:390px">
+<div data-screen-label="Result incorrect" style="width:390px;height:844px;background:#D9483B;display:flex;flex-direction:column;align-items:center;padding:24px;box-sizing:border-box;font-family:'Nunito',system-ui,sans-serif">
+  <div style="flex:.9"></div>
+  <div style="width:84px;height:84px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:36px;color:#D9483B">&#10005;</div>
+  <div style="margin-top:18px;font-weight:900;font-size:36px;letter-spacing:2px;color:#fff">NOT NOVA</div>
+  <div style="margin-top:8px;font-weight:700;font-size:15px;color:rgba(255,255,255,.8)">Your opponent wins the round</div>
+  <div style="margin-top:22px;width:230px;height:280px;background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden">
+    <div style="{{ resDeadFig }}"><div style="{{ resDeadEyes }}"><div style="{{ resDeadEye }}"></div><div style="{{ resDeadEye }}"></div></div></div>
+    <div style="font-weight:900;font-size:24px;letter-spacing:2px;color:#B3ACA1;text-decoration:line-through">NOVA</div>
+    <div style="position:absolute;width:64%;height:12px;border-radius:6px;background:#403A32;left:18%;top:calc(50% - 6px);transform:rotate(45deg)"></div>
+    <div style="position:absolute;width:64%;height:12px;border-radius:6px;background:#403A32;left:18%;top:calc(50% - 6px);transform:rotate(-45deg)"></div>
+  </div>
+  <div style="flex:1"></div>
+  <div style="width:100%;height:64px;border-radius:32px;background:#fff;color:#221E19;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;letter-spacing:2px">PLAY AGAIN</div>
+</div>
+</div></div>
+</div>
+
+<p class="dv-next">Try next: "flipped cards face-down instead of crossed" (it's a tweak) &middot; "hide the names on cards" (also a tweak) &middot; "riff on the setup readout in <a class="dv-oid" href="#1a">1a</a>"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;deadStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;cross&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;cross&quot;,&quot;flip&quot;],&quot;section&quot;:&quot;Board&quot;},&quot;showNames&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Board&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const deadStyle = this.props.deadStyle ?? 'cross';
+    const showNames = this.props.showNames ?? true;
+    const INK = '#221E19', PAPER = '#FAF8F3', LINE = '#E8E3DA';
+    const CHARS = [
+      {n:'Bolt',c:'#EF5D43',s:'circle'},{n:'Ziggy',c:'#F5A623',s:'square'},{n:'Pip',c:'#F7CE46',s:'diamond'},
+      {n:'Rusty',c:'#8BC34A',s:'arch'},{n:'Momo',c:'#37BFC0',s:'circle'},{n:'Clank',c:'#5F7481',s:'square'},
+      {n:'Nova',c:'#5E6AD2',s:'diamond'},{n:'Dot',c:'#E5599B',s:'pill'},{n:'Turbo',c:'#3E8DE3',s:'arch'},
+      {n:'Wanda',c:'#9C5FD4',s:'circle'},{n:'Gus',c:'#8D6E63',s:'square'},{n:'Bleep',c:'#3FA66A',s:'pill'}
+    ];
+    const SZ = {circle:[66,66],square:[62,62],diamond:[54,54],arch:[68,58],pill:[72,46]};
+    const rad = (s,k) => s==='circle' ? '50%' : s==='square' ? 16*k+'px' : s==='diamond' ? 12*k+'px' : s==='arch' ? `${34*k}px ${34*k}px ${10*k}px ${10*k}px` : 23*k+'px';
+    const fig = (s,c,k=1) => ({width:SZ[s][0]*k,height:SZ[s][1]*k,background:c,borderRadius:rad(s,k),transform:s==='diamond'?'rotate(45deg)':undefined,display:'flex',alignItems:'center',justifyContent:'center',flex:'none'});
+    const eyes = (s,k=1) => ({display:'flex',gap:10*k,transform:s==='diamond'?'rotate(-45deg)':undefined,marginTop:-3*k});
+    const eye = (k=1,dim) => ({width:9*k,height:9*k,borderRadius:'50%',background:dim?'rgba(255,255,255,.55)':'rgba(255,255,255,.95)'});
+    const mk = (i,o={}) => {
+      const ch = CHARS[i], dead = !!o.dead;
+      const card = {position:'relative',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:showNames?7:0,height:152,borderRadius:18,background:'#fff',border:'2px solid '+LINE,overflow:'hidden'};
+      if (dead) { card.background='#F0EDE6'; card.border='2px solid #EAE5DC'; }
+      if (o.late && !dead) { card.border='3px solid '+ch.c; card.boxShadow='0 8px 18px rgba(34,30,25,.16)'; card.transform='scale(1.03)'; card.zIndex=1; }
+      if (o.pick) { card.border='3px solid '+INK; card.boxShadow='0 10px 22px rgba(34,30,25,.25)'; card.zIndex=4; }
+      const barC = o.late ? '#CFC7B9' : '#403A32';
+      const bar = r => ({position:'absolute',width:'60%',height:9,borderRadius:5,background:barC,left:'20%',top:'calc(50% - 4.5px)',transform:`rotate(${r}deg)`});
+      return {
+        name: ch.n.toUpperCase(), card,
+        fig: fig(ch.s, dead?'#C6BFB3':ch.c, .95), eyes: eyes(ch.s,.95), eye: eye(.95,dead),
+        showFig: !(dead && deadStyle==='flip'), back: dead && deadStyle==='flip',
+        backStyle: {width:44,height:58,borderRadius:12,border:'3px solid #C7C0B3'},
+        cross: dead && deadStyle==='cross', bar1: bar(45), bar2: bar(-45),
+        showName: showNames,
+        nameStyle: {fontWeight:900,fontSize:13,letterSpacing:'.4px',color:dead?'#B3ACA1':INK,textDecoration:dead?'line-through':'none',position:'relative'},
+        pick: !!o.pick,
+        pickBadge: {position:'absolute',top:6,right:6,width:26,height:26,borderRadius:13,background:INK,color:PAPER,display:'grid',placeItems:'center',fontWeight:900,fontSize:15}
+      };
+    };
+    const deadMid = [1,10], aliveLate = [4,6,8], deadGuess = [1,3,5,10,11];
+    const sec = CHARS[6];
+    return {
+      midCards: CHARS.map((_,i)=>mk(i,{dead:deadMid.includes(i)})),
+      lateCards: CHARS.map((_,i)=>mk(i,{dead:!aliveLate.includes(i),late:true})),
+      guessCards: CHARS.map((_,i)=>mk(i,{dead:deadGuess.includes(i),pick:i===6})),
+      skels: Array.from({length:12},()=>({})),
+      secretFig: fig(sec.s,sec.c,2.2), secretEyes: eyes(sec.s,2.2), secretEye: eye(2.2),
+      peekFig: fig(sec.s,sec.c,1.5), peekEyes: eyes(sec.s,1.5), peekEye: eye(1.5),
+      sheetFig: fig(sec.s,sec.c,1), sheetEyes: eyes(sec.s,1), sheetEye: eye(1),
+      resFig: fig(sec.s,sec.c,1.5), resEyes: eyes(sec.s,1.5), resEye: eye(1.5),
+      resDeadFig: fig(sec.s,'#C6BFB3',1.5), resDeadEyes: eyes(sec.s,1.5), resDeadEye: eye(1.5,true)
+    };
+  }
+}
+</script>
+</body>
+</html>

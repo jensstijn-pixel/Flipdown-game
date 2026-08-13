@@ -1,0 +1,579 @@
+{
+  "boards": [
+    {
+      "id": "robots-1",
+      "category": "robots",
+      "number": 1,
+      "robots": [
+        {
+          "id": "r1-1",
+          "name": "Bolt",
+          "top": "top-propeller",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r1-2",
+          "name": "Clank",
+          "top": "top-none",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r1-3",
+          "name": "Dot",
+          "top": "top-propeller",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r1-4",
+          "name": "Fizz",
+          "top": "top-antenna",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r1-5",
+          "name": "Gus",
+          "top": "top-antenna",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r1-6",
+          "name": "Momo",
+          "top": "top-antennae",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r1-7",
+          "name": "Nova",
+          "top": "top-antennae",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r1-8",
+          "name": "Pip",
+          "top": "top-antenna",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r1-9",
+          "name": "Rusty",
+          "top": "top-antennae",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r1-10",
+          "name": "Turbo",
+          "top": "top-none",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r1-11",
+          "name": "Wanda",
+          "top": "top-none",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r1-12",
+          "name": "Ziggy",
+          "top": "top-propeller",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        }
+      ]
+    },
+    {
+      "id": "robots-2",
+      "category": "robots",
+      "number": 2,
+      "robots": [
+        {
+          "id": "r2-1",
+          "name": "Astro",
+          "top": "top-antennae",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r2-2",
+          "name": "Bingo",
+          "top": "top-propeller",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r2-3",
+          "name": "Cosmo",
+          "top": "top-propeller",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r2-4",
+          "name": "Dizzy",
+          "top": "top-none",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r2-5",
+          "name": "Echo",
+          "top": "top-antennae",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r2-6",
+          "name": "Flip",
+          "top": "top-propeller",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r2-7",
+          "name": "Gizmo",
+          "top": "top-antennae",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r2-8",
+          "name": "Hopper",
+          "top": "top-antenna",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r2-9",
+          "name": "Jolt",
+          "top": "top-none",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r2-10",
+          "name": "Kip",
+          "top": "top-antenna",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r2-11",
+          "name": "Lumo",
+          "top": "top-antenna",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r2-12",
+          "name": "Mint",
+          "top": "top-none",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        }
+      ]
+    },
+    {
+      "id": "robots-3",
+      "category": "robots",
+      "number": 3,
+      "robots": [
+        {
+          "id": "r3-1",
+          "name": "Nix",
+          "top": "top-none",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r3-2",
+          "name": "Orbit",
+          "top": "top-antenna",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r3-3",
+          "name": "Pixel",
+          "top": "top-antennae",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r3-4",
+          "name": "Quark",
+          "top": "top-propeller",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r3-5",
+          "name": "Rex",
+          "top": "top-propeller",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r3-6",
+          "name": "Spark",
+          "top": "top-antennae",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r3-7",
+          "name": "Tonk",
+          "top": "top-antenna",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r3-8",
+          "name": "Volt",
+          "top": "top-none",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r3-9",
+          "name": "Wren",
+          "top": "top-antenna",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r3-10",
+          "name": "Yoyo",
+          "top": "top-antennae",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r3-11",
+          "name": "Zap",
+          "top": "top-propeller",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r3-12",
+          "name": "Blip",
+          "top": "top-none",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        }
+      ]
+    },
+    {
+      "id": "robots-4",
+      "category": "robots",
+      "number": 4,
+      "robots": [
+        {
+          "id": "r4-1",
+          "name": "Atlas",
+          "top": "top-propeller",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r4-2",
+          "name": "Bumper",
+          "top": "top-antenna",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r4-3",
+          "name": "Chip",
+          "top": "top-antenna",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r4-4",
+          "name": "Dash",
+          "top": "top-antennae",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r4-5",
+          "name": "Elmo",
+          "top": "top-none",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r4-6",
+          "name": "Fig",
+          "top": "top-antennae",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r4-7",
+          "name": "Gonk",
+          "top": "top-propeller",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r4-8",
+          "name": "Hex",
+          "top": "top-propeller",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r4-9",
+          "name": "Jinx",
+          "top": "top-antenna",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r4-10",
+          "name": "Kobo",
+          "top": "top-antennae",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r4-11",
+          "name": "Lex",
+          "top": "top-none",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r4-12",
+          "name": "Milo",
+          "top": "top-none",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "cream"
+        }
+      ]
+    },
+    {
+      "id": "robots-5",
+      "category": "robots",
+      "number": 5,
+      "robots": [
+        {
+          "id": "r5-1",
+          "name": "Nugget",
+          "top": "top-antenna",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r5-2",
+          "name": "Otto",
+          "top": "top-propeller",
+          "eyes": "eyes-single",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r5-3",
+          "name": "Puck",
+          "top": "top-none",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "sky"
+        },
+        {
+          "id": "r5-4",
+          "name": "Quill",
+          "top": "top-antennae",
+          "eyes": "eyes-visor",
+          "base": "base-wheels",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        },
+        {
+          "id": "r5-5",
+          "name": "Rocco",
+          "top": "top-none",
+          "eyes": "eyes-two",
+          "base": "base-wheels",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r5-6",
+          "name": "Snap",
+          "top": "top-none",
+          "eyes": "eyes-single",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "cream"
+        },
+        {
+          "id": "r5-7",
+          "name": "Tank",
+          "top": "top-antennae",
+          "eyes": "eyes-single",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "plum"
+        },
+        {
+          "id": "r5-8",
+          "name": "Vex",
+          "top": "top-antenna",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "sunny"
+        },
+        {
+          "id": "r5-9",
+          "name": "Wobble",
+          "top": "top-antennae",
+          "eyes": "eyes-two",
+          "base": "base-legs",
+          "arms": "arms-claw",
+          "colour": "sky"
+        },
+        {
+          "id": "r5-10",
+          "name": "Yuki",
+          "top": "top-antenna",
+          "eyes": "eyes-visor",
+          "base": "base-tracks",
+          "arms": "arms-claw",
+          "colour": "sunny"
+        },
+        {
+          "id": "r5-11",
+          "name": "Zeno",
+          "top": "top-propeller",
+          "eyes": "eyes-visor",
+          "base": "base-legs",
+          "arms": "arms-grabber",
+          "colour": "plum"
+        },
+        {
+          "id": "r5-12",
+          "name": "Bop",
+          "top": "top-propeller",
+          "eyes": "eyes-two",
+          "base": "base-tracks",
+          "arms": "arms-grabber",
+          "colour": "cream"
+        }
+      ]
+    }
+  ]
+}
