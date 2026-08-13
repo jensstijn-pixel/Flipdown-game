@@ -32,6 +32,16 @@ body,
   height: 100%;
 }
 
+/* Mobile browsers shrink the visual viewport when the URL bar shows; dvh tracks
+   it so the bottom button never ends up under the chrome. */
+@supports (height: 100dvh) {
+  html,
+  body,
+  #root {
+    height: 100dvh;
+  }
+}
+
 body {
   margin: 0;
   background: #221e19;
@@ -74,6 +84,9 @@ svg {
   position: relative;
   overflow: hidden;
   background: #faf8f3;
+  /* Installed on iPhone the app runs under the notch and home indicator. */
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 @media (min-width: 431px) {

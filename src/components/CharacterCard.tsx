@@ -32,7 +32,10 @@ export function CharacterCard({ character, category, eliminated, late, picked, o
     alignItems: 'center',
     justifyContent: 'center',
     gap: 7,
-    height: 152,
+    // The grid gives each row at most 152px and less when the screen is short.
+    height: '100%',
+    minHeight: 0,
+    padding: '4px 2px',
     borderRadius: 18,
     background: eliminated ? T.deadTile : T.white,
     border: `2px solid ${eliminated ? T.deadTileBorder : T.line}`,
@@ -76,6 +79,7 @@ export function CharacterCard({ character, category, eliminated, late, picked, o
           color: eliminated ? T.deadName : T.ink,
           textDecoration: eliminated ? 'line-through' : 'none',
           position: 'relative',
+          flex: 'none',
         }}
       >
         {character.name.toUpperCase()}

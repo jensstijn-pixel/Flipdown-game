@@ -10,7 +10,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['fonts/*.woff2', 'icons/*.png'],
       workbox: {
         // Everything the game needs is precached: after the first load it runs
         // with the phone in airplane mode.

@@ -29,8 +29,13 @@ export function CharacterFigure({ character, category, size, dead, style }: Prop
   const box = FIGURE_BOX[size]
   const common: CSSProperties = {
     width: box.w,
+    maxWidth: '100%',
     height: box.h,
-    flex: 'none',
+    // The box is a maximum, not a promise: on a short phone the card shrinks and
+    // the figure has to come with it rather than get clipped. preserveAspectRatio
+    // keeps the drawing centred whatever it ends up at.
+    flex: `0 1 ${box.h}px`,
+    minHeight: 0,
     // Category-agnostic: works the same on an SVG figure or an illustration.
     filter: dead ? 'grayscale(1) contrast(.72) brightness(1.16)' : undefined,
     opacity: dead ? 0.62 : undefined,
