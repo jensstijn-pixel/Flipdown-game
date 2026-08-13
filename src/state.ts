@@ -34,7 +34,10 @@ const initial: GameState = {
 export type Action =
   | { type: 'setCategory'; category: Category }
   | { type: 'setBoard'; number: number }
-  | { type: 'startRound'; secretId: string }
+  /** `roll` is a 0..1 float from the caller: the randomness comes from outside so
+   *  the reducer stays pure, and the character is resolved against the reducer's
+   *  own board number rather than whatever the click handler last saw. */
+  | { type: 'startRound'; roll: number }
   | { type: 'gotIt' }
   | { type: 'toggleCard'; id: string }
   | { type: 'restoreCard'; id: string }
@@ -53,8 +56,12 @@ function reducer(s: GameState, a: Action): GameState {
       return { ...s, category: a.category }
     case 'setBoard':
       return { ...s, boardNumber: a.number }
-    case 'startRound':
-      return { ...s, screen: 'secret', secretId: a.secretId, eliminated: [], guessMode: false, pickedId: null, awaitingAnswer: false, outcome: null }
+    case 'startRound': {
+      const board = getBoard(s.category, s.boardNumber)
+      if (!board) return s
+      const secretId = board.robots[Math.min(board.robots.length - 1, Math.floor(a.roll * board.robots.length))].id
+      return { ...s, screen: 'secret', secretId, eliminated: [], guessMode: false, pickedId: null, awaitingAnswer: false, outcome: null }
+    }
     case 'gotIt':
       return { ...s, screen: 'board' }
     case 'toggleCard':
@@ -151,10 +158,9 @@ export function useGame() {
   return [state, dispatch] as const
 }
 
-/** Random per device — the whole point is that neither phone knows the other's card. */
-export function pickSecret(ids: string[]): string {
-  return ids[Math.floor(Math.random() * ids.length)]
-}
+/** Random per device — the whole point is that neither phone knows the other's card.
+ *  Both phones may land on the same character; that is fine and stays that way. */
+export const roll = () => Math.random()
 
 /** Few enough left that the board should start feeling tense. */
 export const LATE_GAME_AT = 4

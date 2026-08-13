@@ -5,7 +5,7 @@ import { BoardScreen } from './screens/BoardScreen'
 import { ResultScreen } from './screens/ResultScreen'
 import { SecretScreen } from './screens/SecretScreen'
 import { SetupScreen } from './screens/SetupScreen'
-import { pickSecret, useGame } from './state'
+import { roll, useGame } from './state'
 
 export default function App() {
   const [s, dispatch] = useGame()
@@ -21,11 +21,7 @@ export default function App() {
     if (stranded) dispatch({ type: 'endRound' })
   }, [stranded, dispatch])
 
-  const start = () => {
-    const b = getBoard(s.category, s.boardNumber)
-    if (!b) return
-    dispatch({ type: 'startRound', secretId: pickSecret(b.robots.map((r) => r.id)) })
-  }
+  const start = () => dispatch({ type: 'startRound', roll: roll() })
 
   let screen
   if (stranded || s.screen === 'setup' || !board || !secret) {
